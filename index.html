@@ -929,10 +929,10 @@
         <div class="container">
             <h1>בכל לגימה של נביעות אתם
                 מכניסים מגנזיום טבעי לגוף.</h1>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/oL6JxSE-Z4E" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="video" data-modal="#videoModal">
+                <video autoplay loop muted playsinline preload="metadata">
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
@@ -1090,6 +1090,20 @@
             <source media="(min-width:1024px)" srcset="img/new-page/bg.jpg">
             <img src="img/new-page/bg-mobile.jpg" alt="neviot-background-image">
         </picture>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <!-- Modal Close -->
+        <div class="modal-close">
+            <a href="">
+                <img src="img/new-page/close-icon.svg" alt="neviot-icon">
+            </a>
+        </div>
+        <!-- Video -->
+        <div class="video ratio-16-9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oL6JxSE-Z4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!--	WORKAREA END-->
