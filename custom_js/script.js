@@ -28,20 +28,3 @@ if (videoModal) {
     }
   });
 }
-
-/* #Video Modal
-  ======================================================= */
-const quizModalToggler = document.querySelector('.quiz-modal-toggler');
-
-// Message Modal Handler
-if (quizModalToggler) {
-  quizModalToggler.addEventListener('click', (e) => {
-    e.preventDefault();
-    const modal = document.querySelector(quizModalToggler.dataset.modal);
-
-    if (modal) {
-      modal.classList.toggle('show');
-      body.classList.toggle('no-scroll');
-    }
-  });
-}
