@@ -87,6 +87,17 @@
   object-fit: cover;
 }
 
+.new-page-video a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-page-video a img {
+  width: 8.33vw;
+}
+
 body.no-scroll {
   overflow: hidden;
 }
@@ -110,6 +121,10 @@ body.no-scroll {
 
   .new-page-video .video {
     padding-top: 110%;
+  }
+
+  .new-page-video a img {
+    width: 14.8vw;
   }
 }
 
